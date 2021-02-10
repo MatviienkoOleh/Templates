@@ -1,0 +1,198 @@
+body {
+    color: white;
+}
+
+.firstFooter {
+    width: 1920;
+    background-color: black;
+    display: flex;;
+    justify-content: space-around;
+}
+
+.provaidersNavigation {
+    display: flex;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.imageOne {
+    width: 13.5px;
+    height: 13.5px;
+    margin: 10px;
+}
+
+.registrationNavigation {
+    display: flex;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.registationLinks {
+    text-decoration: none;
+    color: white;
+}
+
+.mainNavigation {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nickLogo {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+}
+.navigationButton {
+    display: flex;
+}
+.navigationBlock {
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.navigationBlock:hover {
+    border: 1px solid white;
+}
+
+.greatings { 
+    background-image: url(./images/Rectangle\ 3.png);
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.randomBlock {
+    border: 4px solid white;
+    text-align: center;
+    padding: 20px;
+}
+
+.Porter {
+    border-bottom: 1px solid white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+}
+
+.NewYorkCity {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mainInformation {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.secondSection {
+    display: flex;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 1040px;
+    height: 730px;
+}
+
+.galleryImages {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondHeader {
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    padding-top: 10%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.galleryPhoto {
+    width: 215px;
+    height: 214px;
+}
+
+.photoBlock {
+    border: 1px solid black;
+    background: #191B1C;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.photoBlock:hover {
+    border: 1px solid white;
+}
+
+.linkToGallery {
+    background-image: url(./images/Rectangle\ 8.png);
+    width: 880px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ImportantHeader {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+
+.wrapperDiv {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperButton {
+    margin-bottom: 20%;
+    padding: 20px;
+    border-color:transparent;
+    border: 1px solid black;
+}
+
+.wrapperButton:hover {
+    border: 1px solid white;
+    padding: 20px;
+}
