@@ -263,3 +263,167 @@ body {
     font-size: 36px;
     line-height: 48px;
 }
+
+.NewItemsAdd {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 17%;
+    margin-right: 15%;
+}
+
+.img_block { 
+    border: 1px solid black;
+    background: #191B1C;
+    width: 215px;
+    height: 260px;
+}
+
+.margin_block {
+    margin: 32px;
+}
+
+.img_block:hover {
+    border: 1px solid white;
+}
+
+.new_Block_Photo { 
+    margin-top: 30px;
+}
+
+.price_Line {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.brands {
+    height: 362px;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands_List {
+    margin-top: 3%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.list_Of_Brands_Links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.brands_links {
+    margin: 20px;
+}
+
+.navigation_Footer {
+    height: 300px;
+    background-image: url("./images/Rectangle\ 15.png");
+    display: flex;
+    padding-top: 5;
+    justify-content: space-around;
+    padding-left: 19%;
+    padding-right: 15%;
+}
+
+.footers_block_one {
+    width: 400px;
+}
+
+.footers_block_Two {
+    width: 400px;
+}
+
+.footers_block_third {
+    width: 400px;
+}
+
+.footer_headers {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+}
+
+.footer_Info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.fotter_List_links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.fotter_links {
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #0F0F0F;
+    display: flex;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.fotter_links:hover {
+    background-color: #1F1F1F;
+}
+
+.black_for_subskribe {
+    display: flex;
+}
+
+
+.input_for_subscribe {
+    background: rgba(255, 255, 255, 0.4);
+    color: white
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.fotter_links_for_subscribe {
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.fotter_links_for_subscribe:hover {
+    background-color: #1F1F1F;
+}
+
+.footer_down_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background: #0F0F0F;
+}
