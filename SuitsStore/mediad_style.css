@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1024px) {
+    .secondSection {
+        width: 100%;
+    }
+
+    .gallery {
+        width: 60%;
+    }
+
+    .margin_block {
+        margin: 20px;
+    }
+
+    .galleryPhoto {
+        width: 110px;
+        height: 130px;
+    }
+
+    .linkToGallery {
+        width: 40%;
+    }
+
+    .img_block {
+        width: 110px;
+        height: 130px;
+    }
+
+    .margin_block {
+        margin: 10px;
+    }
+
+    .fourthSection {
+        height: 900px;
+    }
+
+    .brands_Images {
+        width: 200px;
+    }
+
+    .navigation_Footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
