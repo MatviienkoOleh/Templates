@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1030px) {
     .secondSection {
         width: 100%;
     }
@@ -40,5 +40,465 @@
     .navigation_Footer {
         padding-left: 5%;
         padding-right: 5%;
+    }
+    .NewItemsAdd {
+        margin-left: 20%;
+        margin-right: 7%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .secondSection {
+        width: 100%;
+    }
+
+    .gallery {
+        width: 60%;
+    }
+
+    .margin_block {
+       margin: 20px;
+    }
+
+    .galleryPhoto {
+        width: 70px;
+        height: 130px;
+    }
+
+    .linkToGallery {
+        width: 40%;
+    }
+
+    .NewItemsAdd {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .img_block {
+        width: 130px;
+        height: 130px;
+    }
+
+    .margin_block {
+        width: 110px;
+    }
+
+    .fourthSection {
+        height: 900px;
+    }
+
+    .brands_Images {
+        width: 170px;
+    }
+
+    .navigation_Footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .collectionInfo {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1730px) {
+    .secondSection {
+        width: 100%;
+    }
+
+    .gallery {
+        width: 60%;
+    }
+
+    .margin_block {
+       margin: 10px;
+    }
+
+    .galleryPhoto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .linkToGallery {
+        width: 40%;
+    }
+
+    .NewItemsAdd {
+        margin-left: 23%;
+        margin-right: 20%;
+    }
+
+    .listHeader {
+        margin-top: 5%;
+    }
+
+    .img_block {
+        width: 160px;
+        height: 160px;
+    }
+
+    .margin_block {
+        width: 200px;
+    }
+
+    .fourthSection {
+        height: 900px;
+    }
+
+    .brands_Images {
+        width: 250px;
+    }
+
+    .navigation_Footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .collectionInfo {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1630px) {
+    .secondSection {
+        width: 100%;
+    }
+
+    .gallery {
+        width: 60%;
+    }
+
+    .margin_block {
+       margin: 10px;
+    }
+
+    .galleryPhoto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .linkToGallery {
+        width: 40%;
+    }
+
+    .NewItemsAdd {
+        margin-left: 22%;
+        margin-right: 17%;
+    }
+
+    .listHeader {
+        margin-top: 5%;
+    }
+
+    .img_block {
+        width: 160px;
+        height: 160px;
+    }
+
+    .margin_block {
+        width: 200px;
+    }
+
+    .fourthSection {
+        height: 900px;
+    }
+
+    .brands_Images {
+        width: 250px;
+    }
+
+    .navigation_Footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .collectionInfo {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    .secondSection {
+        width: 100%;
+    }
+
+    .gallery {
+        width: 60%;
+    }
+
+    .margin_block {
+       margin: 10px;
+    }
+
+    .galleryPhoto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .linkToGallery {
+        width: 40%;
+    }
+
+    .NewItemsAdd {
+        margin-left: 20%;
+        margin-right: 15%;
+    }
+
+    .listHeader {
+        margin-top: 5%;
+    }
+
+    .img_block {
+        width: 160px;
+        height: 160px;
+    }
+
+    .margin_block {
+        width: 200px;
+    }
+
+    .fourthSection {
+        height: 900px;
+    }
+
+    .brands_Images {
+        width: 250px;
+    }
+
+    .navigation_Footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .collectionInfo {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1430px) {
+    .NewItemsAdd {
+        margin-left: 18%;
+        margin-right: 13%;
+    }
+    .brands_Images {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1430px) {
+    .NewItemsAdd {
+        margin-left: 16%;
+        margin-right: 11%;
+    }
+
+    .img_block {
+        width: 145px;
+        height: 145px;
+    }
+
+    .galleryPhoto {
+        width: 145px;
+        height: 145px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .NewItemsAdd {
+        margin-left: 16%;
+        margin-right: 11%;
+    }
+
+    .img_block {
+        width: 145px;
+        height: 145px;
+    }
+
+    .galleryPhoto {
+        width: 145px;
+        height: 145px;
+    }
+
+    .margin_block {
+        margin: 1px;
+    }
+    .new_Block_Photo { 
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .NewItemsAdd {
+        margin-left: 20%;
+        margin-right: 12%;
+    }
+
+    .img_block {
+        width: 120px;
+        height: 120px;
+    }
+
+    .galleryPhoto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .margin_block {
+        margin: 1px;
+    }
+    .new_Block_Photo { 
+        margin-top: 10px;
+    }
+
+    .margin_block {
+        width: 160px;
+    }
+
+    .secondSection {
+        height: 530px;
+    }
+
+    .linkToGallery {
+        height: 530px;;
+    }
+
+    .fourthSection {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .NewItemsAdd {
+        margin-left: 15%;
+        margin-right: 7%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .NewItemsAdd {
+        margin-left: 15%;
+        margin-right: 7%;
+    }
+
+    .brands_Images {
+        width: 150px;
+    }
+
+    .img_block {
+        width: 100px;
+        height: 100px;
+    }
+
+    .galleryPhoto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .margin_block {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .mainNavigation {
+       display: none;
+    }
+    .navigation_Footer {
+       display: none;
+    }
+
+    .fourthSection {
+        height: 600px;
+    }
+    
+    .brands {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .fourthSection {
+        display: none;
+    }
+    .brands {
+        height: 200px;
+    }
+
+    .brands_Images {
+        width: 100px;
+    }
+
+    .collectionInfo {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .margin_block {
+        width: 100px;
+    }
+
+    .galleryPhoto {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .brands_List,
+    .collectionHeader,
+    .ImportantHeader,
+    .secondHeader,
+    .Porter {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .NewYorkCity {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .mainInformation {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .list_Of_Brands_Links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .brands {
+        height: auto;
+    }
+
+    .galleryImages {
+        display: none;
+    }
+
+    .wrapperButton,
+    .linkToColletion {
+        padding: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) { 
+    .collectionInfo {
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) { 
+    .collectionInfo {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .ImportantHeader {
+        font-size: 15px;
+        line-height: 25px;
     }
 }
