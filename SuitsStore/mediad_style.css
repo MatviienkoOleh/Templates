@@ -395,6 +395,10 @@
     .margin_block {
         width: 130px;
     }
+    .two_Images {
+        height: 20px;
+        width: 20px;
+    }
 }
 
 @media only screen and (max-width: 810px) {
@@ -484,7 +488,7 @@
     }
 }
 
-@media only screen and (max-width: 650px) { 
+@media only screen and (max-width: 500px) { 
     .collectionInfo {
         font-size: 15px;
         line-height: 15px;
