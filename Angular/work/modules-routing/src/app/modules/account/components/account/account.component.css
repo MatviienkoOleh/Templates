@@ -1,16 +1,32 @@
-.account {
-  width: 500px;
+.wrapper {
   display: flex;
-  justify-content: center;
-  border: 1px solid hsl(0, 0%, 0%);
-  padding: 10px;
+  flex-direction: column;
+  background: linear-gradient(#ffffff, #585e66);
 }
 
-.nav_Bar {
+.main_info {
   display: flex;
-  justify-content: center;
 }
 
-.header {
-  text-align: center;
+.list_Elements {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+.elements {
+  margin: 10px;
+}
+
+.content_block {
+  margin-bottom: 5%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-left: 8%;
+  width: 80vw;
+  height: 60vh;
+  border: 1px solid #2b270a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

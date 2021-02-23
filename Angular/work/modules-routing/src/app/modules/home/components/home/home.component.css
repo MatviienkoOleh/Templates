@@ -1,16 +1,217 @@
-.home {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid hsl(0, 0%, 0%);
-  padding: 10px;
-}
-
-.nav_Bar {
-  display: flex;
-  justify-content: center;
+.wrapper {
+  background: linear-gradient(#ffffff, #585e66);
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_Navigation {
+  height: 60px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  margin-left: 5%;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 150px;
+  background: #f2f2f2;
+  border: 1px solid;
+  border-color: white #f7f7f7 whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888888 transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  background: #f2f2f2;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.dropdown-select:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: 2px solid #49aff2;
+  outline: 2px solid -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}
+
+.dropdown-dark {
+  background: #444;
+  border-color: #111111 #0a0a0a black;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-dark:before {
+  border-bottom-color: #aaa;
+}
+
+.dropdown-dark:after {
+  border-top-color: #aaa;
+}
+
+.dropdown-dark .dropdown-select {
+  color: #aaa;
+  text-shadow: 0 1px black;
+  background: #444;
+}
+
+.dropdown-dark .dropdown-select:focus {
+  color: #ccc;
+}
+
+.dropdown-dark .dropdown-select > option {
+  background: #444;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.myButton {
+  margin-right: 20px;
+	box-shadow:inset 0px 1px 3px 0px #525252;
+	background:linear-gradient(to bottom, #555555 5%, #3b3b3b 100%);
+	background-color:#707070;
+	border-radius:5px;
+	border:1px solid #010504;
+	display:inline-block;
+	cursor:pointer;
+	color:#949494;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding: 8px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #3b3b3b 5%, #707070 100%);
+	background-color:#3b3b3b;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.main_content {
+  background-color: lightslategray;
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid black;
+  height: 70vh;
+}
+
+.main_footer {
+  background-color: lightslategray;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.fotter_links {
+  margin: 5px;
+}
+
+.syte_Links {
+  display: flex;
+  align-items: center;
+  padding-right: 4%;
+}
+
+.icon_facebook {
+  margin: 5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.icon_instagram {
+  display: block;
+  width: 50px;
+  height: 50px;
 }

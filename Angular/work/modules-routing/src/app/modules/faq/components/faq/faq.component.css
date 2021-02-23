@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_of_Links_FAQ {
+    width: 80vw;
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 5%;
+    background: linear-gradient(#ffffff, #585e66);
+}
+
+.list_link_block {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+.links_FAQ {
+    color: black;
+    text-decoration: none;
+}

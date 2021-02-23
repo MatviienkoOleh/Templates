@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit():void {
   }
 
+  constructor(private router: Router) {}
+
+  onNavigate(target: any) {
+    if(target.value) {
+      this.router.navigate([target.value]);
+      return true;
+    } else {
+      return false;
+    } 
+  }
 }
