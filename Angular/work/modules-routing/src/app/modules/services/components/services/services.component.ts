@@ -12,7 +12,7 @@ export class ServicesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  myimageOne: string = "assets/_yazykovoy_skandal_480x270.jpg"
+  myimageOne: string = "assets/120153-mcd.jpg"
   myimageTwo: string = "assets/vegan-plant-based-burger-king-1068x6011-1.jpg"
   myimageThree: string = "assets/1484672122587e4c7a5d5b3_1e0c9c11def481b66912d3cc57e8f683.jpg"
   myimageFour: string = "assets/img_for_fb_1200x630.jpg"
