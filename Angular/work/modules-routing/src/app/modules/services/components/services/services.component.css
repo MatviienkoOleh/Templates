@@ -1,19 +1,18 @@
 .wrapper {
   width: 98vw;
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   background: linear-gradient(#ffffff, #585e66);
 }
 
 .services_block {
     display: flex;
-    width: 90vw;
+    width: 80vw;
     height: 150px;
     margin: 2%;
-    margin-left: 3%;
 }
 
 .images {
-  width: 90vw;
+  width: 80vw;
 }
