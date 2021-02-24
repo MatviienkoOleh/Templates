@@ -3,6 +3,10 @@ import { AccountModule } from "./account/account.module";
 import { FAQModule } from "./faq/faq.module";
 import { FormModule } from "./form/form.module";
 import { HomeModule } from "./home/home.module";
+import { OrganisationAccountModule } from "./organisation-account/organisation-account.module";
+import { OrganisationFormRegistrationModule } from "./organisation-form-registration/organisation-form-registration.module";
+import { OrganisationFormModule } from "./organisation-form/organisation-form.module";
+import { RegistrationModule } from "./registration/registration.module";
 import { ServicesModule } from "./services/services.module";
 
 export const modules = [
@@ -11,5 +15,9 @@ export const modules = [
     HomeModule,
     FormModule,
     ServicesModule,
-    FAQModule
+    FAQModule,
+    RegistrationModule,
+    OrganisationAccountModule,
+    OrganisationFormModule,
+    OrganisationFormRegistrationModule
 ];

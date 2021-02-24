@@ -4,9 +4,11 @@ import { FormComponent } from './components/form/form.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from '../account/components/account/account.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { RegistrationComponent } from '../registration/components/registration/registration.component';
 
 const routesOne: Routes = [
   { path: 'form/account', component: AccountComponent},
+  { path: 'form/registration', component: RegistrationComponent},
 ];
 
 @NgModule({
