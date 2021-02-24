@@ -13,22 +13,22 @@
 <div class = "wrapper">
   <header class = "header">
     <nav class = "header_Navigation">
-        <section class="container">
-            <div class="dropdown dropdown-dark">
-                <select name="two" class="dropdown-select" (change)="onNavigate($event.target)" >
-                <option id = 'form' value = "">Select</option>
-                <option id = 'form' value = "form">Form</option>
-                <option id = 'form' value = "services">Services</option>
-                <option id = 'form' value = "form">Form</option>
-                <option id = 'form' value = "FAQ">F&Q</option>
-              </select>  
-            </div>
-        </section>
-        <button routerLink = "/form" class = "myButton">ВХОД</button>
+      <div class="dropdown">
+        <button class="dropbtn">menu</button>
+        <div class="dropdown-content">
+        <a routerLink = '/form'>User Login/Registration</a>
+        <a routerLink = '/'>Organization Login/Registration</a>
+        <a routerLink = '/services'>Services</a>
+        <a routerLink = '/FAQ'>F&Q</a>
+        <a routerLink = '/'>Registration</a>
+        <a routerLink = '/'>Favorites</a>
+        <a routerLink = '/'>Settings</a>
+        </div>
+      </div>
+      <span class ="logo">Logo</span>
     </nav>
 </header>
 <main class = "main_content">
-  (change)= "navigateTo($event.target.value)"
 </main>
 <footer class = "main_footer">
   <a class = "fotter_links">Работаем 7 дней в неделю | 9:00 — 18:00</a>

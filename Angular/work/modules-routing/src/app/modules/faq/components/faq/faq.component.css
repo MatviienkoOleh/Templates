@@ -7,7 +7,6 @@
 .list_of_Links_FAQ {
     width: 80vw;
     list-style-type: none;
-    border: 1px solid black;
     padding: 5%;
     background: linear-gradient(#ffffff, #585e66);
 }
