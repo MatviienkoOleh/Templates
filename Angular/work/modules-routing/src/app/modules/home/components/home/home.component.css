@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   background: linear-gradient(#ffffff, #585e66);
 }
 
@@ -98,4 +98,51 @@
 
 .logo {
   margin-right: 5%;
+} */
+
+
+
+.cover {
+  height: 100vh;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.cross {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.cover_two {
+  margin-left: -5%;
+  padding-top: 10%;
+  justify-content: space-around;
+  display: none;
+}
+
+.list_text {
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 34px;
+  line-height: 42px;
+  color: #828282;
+}
+
+.list_text:hover {
+  color: black;
+}
+
+.list_div {
+  height: 100vh;
 }

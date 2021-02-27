@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { convertToParamMap, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -20,5 +20,21 @@ export class HomeComponent implements OnInit {
     } else {
       return false;
     } 
+  }
+
+  menuOpen() {
+    const cover: any = document.getElementById('cover');
+    const coverTwo: any = document.getElementById('cover_two');
+
+    cover.style.display = "none";
+    coverTwo.style.display = "flex"
+  }
+
+  closeNavigationBar() {
+    const cover: any = document.getElementById('cover');
+    const coverTwo: any = document.getElementById('cover_two');
+
+    coverTwo.style.display = "none";
+    cover.style.display = "block";
   }
 }

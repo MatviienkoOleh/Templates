@@ -9,8 +9,18 @@
         c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
     </g>
   </symbol>
+  <symbol id = "menu" viewBox="0 0 50 50">
+    <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+  </symbol>
+  <symbol id ="close" viewBox="0 0 22.88 22.88">
+    <path style="fill:#1E201D;" d="M0.324,1.909c-0.429-0.429-0.429-1.143,0-1.587c0.444-0.429,1.143-0.429,1.587,0l9.523,9.539
+	l9.539-9.539c0.429-0.429,1.143-0.429,1.571,0c0.444,0.444,0.444,1.159,0,1.587l-9.523,9.524l9.523,9.539
+	c0.444,0.429,0.444,1.143,0,1.587c-0.429,0.429-1.143,0.429-1.571,0l-9.539-9.539l-9.523,9.539c-0.444,0.429-1.143,0.429-1.587,0
+	c-0.429-0.444-0.429-1.159,0-1.587l9.523-9.539L0.324,1.909z"/>
+  </symbol>
 </svg>
-<div class = "wrapper">
+
+<!-- <div class = "wrapper">
   <header class = "header">
     <nav class = "header_Navigation">
       <div class="dropdown">
@@ -39,4 +49,31 @@
     </svg>
   </div>
 </footer>
+</div> -->
+<div class = "cover" id = "cover">
+  <header class = "main_header">
+    <h1 class = "company_name">Leaf</h1>
+    <svg class = "menu">
+      <use xlink:href ="#menu" (click) = "menuOpen()"></use>
+    </svg>
+  </header>
+</div>
+
+
+<div class = "cover_two" id = "cover_two">
+  <div class = "list_div">
+    <nav>
+      <ul>
+        <li class = "list_text" routerLink = '/form'>Form</li>
+        <li class = "list_text" routerLink = '/FAQ'>F&Q</li>
+        <li class = "list_text" routerLink = '/organisationform'>Organisation</li>
+        <li class = "list_text" routerLink = '/services'>Services</li>
+      </ul>
+    </nav>
+  </div>
+  <div class = "cross_block">
+    <svg class = "cross">
+      <use xlink:href ="#close" (click) = "closeNavigationBar()"></use>
+    </svg>
+  </div>
 </div>
