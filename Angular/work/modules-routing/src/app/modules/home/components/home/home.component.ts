@@ -8,33 +8,30 @@ import { convertToParamMap, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  coverOne: boolean = true; 
+  coverTwo: boolean = false;
+
   ngOnInit():void {
   }
 
   constructor(private router: Router) {}
 
-  onNavigate(target: any) {
-    if(target.value) {
-      this.router.navigate([target.value]);
-      return true;
-    } else {
-      return false;
-    } 
-  }
+  // onNavigate(target: any) {
+  //   if(target.value) {
+  //     this.router.navigate([target.value]);
+  //     return true;
+  //   } else {
+  //     return false;
+  //   } 
+  // }
 
   menuOpen() {
-    const cover: any = document.getElementById('cover');
-    const coverTwo: any = document.getElementById('cover_two');
-
-    cover.style.display = "none";
-    coverTwo.style.display = "flex"
+    this.coverOne = false;
+    this.coverTwo = true;
   }
 
   closeNavigationBar() {
-    const cover: any = document.getElementById('cover');
-    const coverTwo: any = document.getElementById('cover_two');
-
-    coverTwo.style.display = "none";
-    cover.style.display = "block";
+    this.coverTwo = false;
+    this.coverOne = true;
   }
 }

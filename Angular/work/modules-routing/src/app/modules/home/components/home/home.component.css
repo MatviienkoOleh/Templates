@@ -125,10 +125,10 @@
 }
 
 .cover_two {
+  display: flex;
+  justify-content: space-around;
   margin-left: -5%;
   padding-top: 10%;
-  justify-content: space-around;
-  display: none;
 }
 
 .list_text {
@@ -141,8 +141,4 @@
 
 .list_text:hover {
   color: black;
-}
-
-.list_div {
-  height: 100vh;
 }
