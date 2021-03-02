@@ -1,25 +1,27 @@
-<div class = "wrapper">
-    <form action="" class="forma">
-        <div>
-            <label class = "label" for="">Name:</label>
-            <input type="text" placeholder="Name">
+<div class = 'col-sm-6 wrapper'>
+    <form action="" [formGroup] = "profileForm" class = "forma" (ngSubmit)="onSubmit()">
+        <h1>Sign up</h1>
+        <div class = "form-group">
+            <label class = "label_For_Input" for="">Username</label>
+            <input type="text" class = "form-control" formControlName = "name">
         </div>
         <div>
-            <label class = "label" for="">Second Name:</label>
-            <input type="text" placeholder="Second Name"> 
+            <label class = "label_For_Input" for="">Second Name</label>
+            <input type="text" class = "form-control" formControlName = "secondName">
         </div>
         <div>
-            <label class = "label" for="">Phone Number:</label>
-            <input type="number" placeholder="Phone Number">
+            <label class = "label_For_Input" for="">Password</label>
+            <input type="password" class = "form-control" formControlName = "password">
         </div>
         <div>
-            <label class = "label" for="">Address:</label>
-            <input type="text" placeholder="Address">
+            <label class = "label_For_Input" for="">Email</label>
+            <input type="email" class = "form-control" formControlName = "email">
         </div>
         <div>
-            <label class = "label" for="">Comments:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label class = "label_For_Input" for="">Phone number</label>
+            <input type="text" class = "form-control"formControlName = "phoneNumber">
         </div>
-        <button>Submit</button>
+        <button 
+        type="submit" class = "btn btn-primary" [disabled]="!profileForm.valid">Submit</button>
     </form>
 </div>

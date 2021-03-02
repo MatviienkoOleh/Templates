@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { modules } from './modules';
 import { correctPath } from './services';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { correctPath } from './services';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ...modules
+    ...modules,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     ...correctPath

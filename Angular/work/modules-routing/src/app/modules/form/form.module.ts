@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from '../account/components/account/account.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { RegistrationComponent } from '../registration/components/registration/registration.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routesOne: Routes = [
   { path: 'form/account', component: AccountComponent},
@@ -16,7 +17,9 @@ const routesOne: Routes = [
   imports: [
     CommonModule,
     AppRoutingModule,
-    RouterModule.forRoot(routesOne)
+    RouterModule.forRoot(routesOne),
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class FormModule { }

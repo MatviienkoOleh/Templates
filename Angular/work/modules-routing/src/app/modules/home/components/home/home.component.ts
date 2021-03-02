@@ -16,15 +16,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  // onNavigate(target: any) {
-  //   if(target.value) {
-  //     this.router.navigate([target.value]);
-  //     return true;
-  //   } else {
-  //     return false;
-  //   } 
-  // }
-
   menuOpen() {
     this.coverOne = false;
     this.coverTwo = true;

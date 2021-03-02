@@ -1,25 +1,48 @@
 .wrapper {
-    background: linear-gradient(#ffffff, #585e66);
-    height: 97vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .forma {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.label {
-    display: flex;
-    margin-top: 10%;
+.label_For_Input {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 input {
-    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    border:none;
+    background-color: rgb(221, 224, 226);
 }
 
 button {
-    margin-top: 10px;
-    width: 100px;
-    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(221, 224, 226);;
+    color: rgb(3, 3, 3);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+input.ng-invalid {
+    border-left: 5px solid red;
+}
+
+input.ng-valid {
+    border-left: 5px solid green;
 }
