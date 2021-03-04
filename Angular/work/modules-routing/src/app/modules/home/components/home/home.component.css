@@ -18,21 +18,27 @@
   display: block;
   width: 30px;
   height: 30px;
+  margin-top: 30px;
 }
 
 .cover_two {
   display: flex;
   justify-content: space-around;
   margin-left: -5%;
-  padding-top: 10%;
+}
+
+.list_div {
+  margin-top: 15%;
 }
 
 .list_text {
-  list-style-type: none;
-  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
   font-size: 34px;
+  list-style-type: none;
+  margin-top: 40px;
   line-height: 42px;
-  color: #828282;
+  color: #000000;
 }
 
 .list_text:hover {

@@ -1,15 +1,22 @@
+<svg display='none'>
+	<symbol id = "menu" viewBox="0 0 50 50">
+		<path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+	  </symbol>
+</svg>
+
 <div class = "wrapper">
 	<div class = "menu_links">
 		<div class="dropdown">
-			<button class="dropbtn">Account</button>
+			<svg class = "menu dropbtn">
+				<use xlink:href ="#menu"></use>
+			</svg>
 			<div class="dropdown-content">
-			<a>Profile</a>
-			<a routerLink = '/services'>Services</a>
-			<a routerLink = '/FAQ'>F&Q</a>
-			<a>Favorites</a>
-			<a>QRcode</a>
-			<a routerLink = '/'>Home page</a>
-			<a>Settings</a>
+			<a class = "list_Hover_effect" routerLink = '/services'>Services</a>
+			<a class = "list_Hover_effect">Favorites</a>
+			<a class = "list_Hover_effect">QRcode</a>
+			<a class = "list_Hover_effect" routerLink = '/FAQ'>F&Q</a>
+			<a class = "list_Hover_effect" routerLink = '/'>Home page</a>
+			<a class = "list_Hover_effect">Settings</a>
 			</div>
 		</div>
 		<div class = "main_info">
