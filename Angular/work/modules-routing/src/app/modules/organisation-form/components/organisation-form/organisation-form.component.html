@@ -1,19 +1,19 @@
 <div class = "wrapper">	
-	<div class="login-box">
-		<h2>Login</h2>
-		<form>
-			<div class="user-box">
-				<input type="text" name="" required="">
-				<label>Username</label>
-			</div>
-			<div class="user-box">
-				<input type="password" name="" required="">
-				<label>Password</label>
-			</div>
-			<a routerLink = "account"href = "#">
-				Log in
-			</a>
-			<a routerLink = 'registration'>Registration</a>
-		</form>
-	</div>
+	<h1>Log in</h1>
+	<form class = "forma" [formGroup] = "organisationLogInForm" (ngSubmit) = "logIn()">
+		<div>
+			<label class = "label_For_Input">Username</label>
+			<input class = "form-control" type="text" formControlName = "userName">
+		</div>
+		<div>
+			<label class = "label_For_Input" >Password</label>
+			<input class = "form-control" type="password" formControlName = "password">
+		</div>
+		<input class = "rememberMe" type="checkbox" formControlName = "checkbox">
+		<div class = "buttons_Group">
+			<button class = "btn btn-primary" [disabled]="!organisationLogInForm.valid">Log in</button>
+			
+			<a class = "registration" routerLink = 'registration'>Registration</a>
+		</div>
+	</form>
 </div>	

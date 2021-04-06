@@ -6,9 +6,10 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { OrganisationAccountModule } from '../organisation-account/organisation-account.module';
 import { OrganisationFormRegistrationComponent } from '../organisation-form-registration/components/organisation-form-registration/organisation-form-registration.component';
 import { OrganisationAccountComponent } from '../organisation-account/components/organisation-account/organisation-account.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routesTwo: Routes = [
-  { path: 'organisationform/account', component: OrganisationAccountComponent},
+  { path: 'organisationform', component: OrganisationFormComponent},
   { path: 'organisationform/registration', component: OrganisationFormRegistrationComponent},
 ];
 
@@ -17,7 +18,9 @@ const routesTwo: Routes = [
   imports: [
     CommonModule,
     AppRoutingModule,
-    RouterModule.forRoot(routesTwo)
+    RouterModule.forRoot(routesTwo),
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class OrganisationFormModule { }

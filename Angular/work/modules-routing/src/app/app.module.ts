@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { modules } from './modules';
-import { correctPath } from './services';
+import { services } from './services';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ...modules,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
-    ...correctPath
+    ...services
   ],
   bootstrap: [AppComponent]
 })

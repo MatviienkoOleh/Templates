@@ -10,8 +10,7 @@ export interface RegistrationData {
   secondName: string;
   password: any;
   email: any;
-  phoneNumber: number;
-  date: any;
+  phoneNumber: number
 }
 
 export interface LogInData {

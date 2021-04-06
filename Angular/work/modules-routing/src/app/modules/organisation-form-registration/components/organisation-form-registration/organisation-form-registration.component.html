@@ -1,1 +1,27 @@
-<p>organisation-form-registration works!</p>
+<div class = 'col-sm-6 wrapper'>
+    <form action="" [formGroup] = "registarationForm" class = "forma" (ngSubmit)="onSubmit()">
+        <h1>Sign up</h1>
+        <div class = "form-group">
+            <label class = "label_For_Input" for="">Username</label>
+            <input type="text" class = "form-control" formControlName = "name">
+        </div>
+        <div>
+            <label class = "label_For_Input" for="">Second Name</label>
+            <input type="text" class = "form-control" formControlName = "secondName">
+        </div>
+        <div>
+            <label class = "label_For_Input" for="">Password</label>
+            <input type="password" class = "form-control" formControlName = "password">
+        </div>
+        <div>
+            <label class = "label_For_Input" for="">Email</label>
+            <input type="email" class = "form-control" formControlName = "email">
+        </div>
+        <div>
+            <label class = "label_For_Input" for="">Phone number</label>
+            <input type="tel" class = "form-control"formControlName = "phoneNumber">
+        </div>
+        <button 
+        type="submit" class = "btn btn-primary" [disabled]="!registarationForm.valid">Submit</button>
+    </form>
+</div>

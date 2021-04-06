@@ -9,7 +9,9 @@
 			<label class = "label_For_Input" >Password</label>
 			<input class = "form-control" type="password" formControlName = "password">
 		</div>
-		<input class = "rememberMe" type="checkbox" formControlName = "checkbox">
+		<div>
+			<input class = "rememberMe" type="checkbox" formControlName = "checkbox">
+		</div>
 		<div class = "buttons_Group">
 			<button class = "btn btn-primary" [disabled]="!logInForm.valid">Log in</button>
 			

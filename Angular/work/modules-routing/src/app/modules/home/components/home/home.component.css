@@ -2,6 +2,12 @@
   padding-top: 5%;
 }
 
+.backimage {
+  height: 675px;
+  width: 100%;
+  background-image: url("/assets/save-nature-lettering-hand-drawn-vector-9276467.jpg")
+}
+
 .main_header {
   display: flex;
   justify-content: space-around;
@@ -25,6 +31,8 @@
   display: flex;
   justify-content: space-around;
   margin-left: -5%;
+  background-image: url("/assets/save-nature-lettering-hand-drawn-vector-9276467.jpg");
+  height: 735px;
 }
 
 .list_div {

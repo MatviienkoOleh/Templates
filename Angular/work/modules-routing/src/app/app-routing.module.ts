@@ -6,6 +6,7 @@ import { AccountComponent } from './modules/account/components/account/account.c
 import { FAQComponent } from './modules/faq/components/faq/faq.component';
 import { FormComponent } from './modules/form/components/form/form.component';
 import { HomeComponent } from './modules/home/components/home/home.component'
+import { McdonaldsComponent } from './modules/mc-donalds/mcdonalds/mcdonalds.component';
 import { OrganisationFormComponent } from './modules/organisation-form/components/organisation-form/organisation-form.component';
 import { RegistrationComponent } from './modules/registration/components/registration/registration.component';
 import { ServicesComponent } from './modules/services/components/services/services.component';

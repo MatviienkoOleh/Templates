@@ -11,7 +11,6 @@ export class AccountComponent implements OnInit {
   secondName: string = '';
   phoneNumber: number | undefined;
   email: string | undefined;
-  date: string = '';
 
   constructor() { }
 
@@ -26,7 +25,6 @@ export class AccountComponent implements OnInit {
     this.secondName = data.secondName;
     this.phoneNumber = data.phoneNumber;
     this.email = data.email;
-    this.date = this.formatDate(data.date)
   }
 
   formatDate(date: string) {
