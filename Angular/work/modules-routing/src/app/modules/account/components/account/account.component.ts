@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RegistrationData } from 'src/app/interfaces/path.interface';
 
@@ -12,7 +13,14 @@ export class AccountComponent implements OnInit {
   phoneNumber: number | undefined;
   email: string | undefined;
 
-  constructor() { }
+  adjustForm: boolean = false;
+  accountPage: boolean = true;
+
+  selectedFile: any = null;
+  myimageFile: any = null;
+  url: string = "";
+
+  constructor( private http: HttpClient) { }
 
   ngOnInit(): void {
     this.getItemFromLocalStorage();
@@ -31,5 +39,28 @@ export class AccountComponent implements OnInit {
     console.log(date)
     const dateString = date.substr(0, 10)
     return dateString;
+  }
+
+  personalData(): void {
+    this.adjustForm = true;
+    this.accountPage = false;
+  }
+
+  backToAccount(): void {
+    this.adjustForm = false;
+    this.accountPage = true;
+  }
+
+  showFile(event: any): void {
+    this.selectedFile = event.target.files[0];
+    console.log(this.selectedFile);
+
+    this.http.post(this.url, this.selectedFile)
+    .subscribe(
+      response => 
+      console.log(response));
+    
+    this.http.get(this.url)
+    .subscribe(resp => console.log(resp));  
   }
 }
