@@ -216,7 +216,7 @@
 
 .adjust_Link {
   text-decoration: none;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -261,9 +261,9 @@ input.ng-valid {
 }
 
 .btn {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
   border: none;
   background-color: white;
 }
