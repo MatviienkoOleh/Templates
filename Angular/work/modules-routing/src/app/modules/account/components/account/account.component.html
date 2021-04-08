@@ -131,10 +131,11 @@
 	</header>
 	<div id = "personalData" class = "personalData" (click) = "personalData()">
 		<div class = "first_Block_Of_PersonalData">
-			<img src="" alt="" class = "picture">
+			<img alt="" class = "picture">
 			<div class = "change_Data">
                 <p class = "main_info">{{name}}</p>
-				<p class = "main_info">{{phoneNumber}}</p>
+				<p class = "main_info">{{secondName}}</p>
+                <p class = "main_info">{{phoneNumber}}</p>
 				<p class = "support_info">Заполните контактные данныe</p>
 			</div>
 		</div>
@@ -145,10 +146,10 @@
 				<a routerLink = '/services' class = "linkForServices ">Services</a>
 			</li>
 			<li class = "list_Links">
-				<a routerLink = '/services' class = "linkForServices ">Favorites</a>
+				<a routerLink = '/form/account/favorites' class = "linkForServices ">Favorites</a>
 			</li>
 			<li class = "list_Links">
-                <a routerLink = '/services' class = "linkForServices">QRcode</a>
+                <a routerLink = '/form/account/QRcode' class = "linkForServices">QRcode</a>
 			</li>
 			<li class = "list_Links">
 				<a routerLink = "/" class = "linkForServices ">Home page</a>
@@ -184,12 +185,16 @@
 	</div>
 	<footer class = "social_links">
         <p class = "main_info bottom">Ми в соціальних мережах</p>
-		<svg class = "vector_pictures bottom_One">
-            <use xlink:href ="#facebook"></use>
-        </svg>
-        <svg class = "vector_pictures bottom_Two">
-            <use xlink:href ="#instagram"></use>
-        </svg>
+        <a href="https://www.facebook.com/">
+            <svg class = "vector_pictures bottom_One">
+                <use xlink:href ="#facebook"></use>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/">
+            <svg class = "vector_pictures bottom_Two">
+                <use xlink:href ="#instagram"></use>
+            </svg>
+        </a>
 	</footer>
 </div>
 
@@ -200,18 +205,20 @@
             <svg class = "leftArrow" (click) = backToAccount() >
                 <use xlink:href ="#leftArrow"></use>
             </svg>
-            <p class = "saveAdjusts">Зберегти</p>
         </header>
-        <img [src]= myimageFile alt="" class = "adjust_Image">
-        <a href="" class = "adjust_Link">Змінити фото</a>
-        <input type = "file" (change) = showFile($event)/>
+        <img  alt="" class = "adjust_Image">
+        <input  class = "input_File" id = "input_File" type = "file" (change) = showFile($event)/>
+        <label for="input_File" class = "adjust_Link">Змінити фото</label>
     </div>
-    <form action="" class = "adjust_Form">
+    <form action="" class = "adjust_Form" [formGroup] = "logInform" (ngSubmit) = saveChanges()>
         <label class = "adjust_Label">Ім'я</label>
-        <input  class = "adjust_Input" type="text">
-        <label class = "adjust_Label" for="">Телефон</label>
-        <p class = "adjust_Input" >{{phoneNumber}}</p>
+        <input  class = "adjust_Input" type="text" formControlName = "userName">
+        <label class = "adjust_Label">Фамілія</label>
+        <input  class = "adjust_Input" type="text"  formControlName = "secondName">
+        <label class = "adjust_Label">Телефон</label>
+        <input  class = "adjust_Input" type="text"  formControlName = "phone">
         <label class = "adjust_Label" for="">Email</label>
-        <input class = "adjust_Input" type="email">
+        <input class = "adjust_Input" type="email"  formControlName = "mail">
+        <button type="submit" class = "btn saveAdjusts" [disabled]="!logInform.valid">Зберегти</button>
     </form>
 </div>

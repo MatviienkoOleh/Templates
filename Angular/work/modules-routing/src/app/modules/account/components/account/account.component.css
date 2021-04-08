@@ -210,6 +210,10 @@
   background-color: rgb(163, 163, 163);
 }
 
+.input_File {
+  display: none;
+}
+
 .adjust_Link {
   text-decoration: none;
   margin-bottom: 70px;
@@ -246,4 +250,20 @@
   font-weight: 600;
   padding: 10px;
   outline:none;
+}
+
+input.ng-invalid {
+  border-left: 2px solid red;
+}
+
+input.ng-valid {
+  border-left: 2px solid green;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: white;
 }
