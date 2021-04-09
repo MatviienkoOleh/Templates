@@ -4,6 +4,7 @@ import { FAQModule } from "./faq/faq.module";
 import { FormModule } from "./form/form.module";
 import { FuguModule } from "./fugu/fugu.module";
 import { HomeModule } from "./home/home.module";
+import { McDonaldsModule } from "./mc-donalds/mc-donalds.module";
 import { OrganisationAccountModule } from "./organisation-account/organisation-account.module";
 import { OrganisationFormRegistrationModule } from "./organisation-form-registration/organisation-form-registration.module";
 import { OrganisationFormModule } from "./organisation-form/organisation-form.module";
@@ -21,5 +22,6 @@ export const modules = [
     OrganisationAccountModule,
     OrganisationFormModule,
     OrganisationFormRegistrationModule,
-    FuguModule
+    FuguModule,
+    McDonaldsModule
 ];
