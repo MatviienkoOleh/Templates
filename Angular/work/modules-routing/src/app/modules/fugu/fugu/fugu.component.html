@@ -14,56 +14,7 @@
             <a class = "navigation_Bar_Links" (click) = "misoShow()">Miso soup</a>
         </nav>
     </header>
-    <div *ngIf='rolls'>
-        <div class = "block_Food_Type">
-            <img class = "food_image" [src]="filadelfia" alt="">
-            <div class = "food_Info">
-                <h4 class = "food_name">Філадельфія XXL</h4>
-                <span class = "food_Amount">310 г</span>
-            </div>
-            <footer class = "footer_Bar">
-                <span class = "food_Price">249 грн</span>
-                <div class = "wantToBuy">
-                    <span class = "wanna">Хочу!</span>
-                    <svg class = "bag">
-                        <use xlink:href ="#bag"></use>
-                    </svg>
-                </div>
-            </footer>
-        </div>
-        <div class = "block_Food_Type">
-            <img class = "food_image" [src]="california" alt="">
-            <div class = "food_Info">
-                <h4 class = "food_name">California roll</h4>
-                <span class = "food_Amount">290 г</span>
-            </div>
-            <footer class = "footer_Bar">
-                <span class = "food_Price">200 грн</span>
-                <div class = "wantToBuy">
-                    <span class = "wanna">Хочу!</span>
-                    <svg class = "bag">
-                        <use xlink:href ="#bag"></use>
-                    </svg>
-                </div>
-            </footer>
-        </div>
-        <div class = "block_Food_Type">
-            <img class = "food_image" [src]="filadelfia" alt="">
-            <div class = "food_Info">
-                <h4 class = "food_name">Філадельфія XXL</h4>
-                <span class = "food_Amount">310 г</span>
-            </div>
-            <footer class = "footer_Bar">
-                <span class = "food_Price">249 грн</span>
-                <div class = "wantToBuy">
-                    <span class = "wanna">Хочу!</span>
-                    <svg class = "bag">
-                        <use xlink:href ="#bag"></use>
-                    </svg>
-                </div>
-            </footer>
-        </div>
-    </div>
+    <app-rolls *ngIf='rolls'></app-rolls>
     <app-udon *ngIf='udon'></app-udon>
     <app-sushi *ngIf='sushi'></app-sushi>
     <app-miso-soup *ngIf='miso'></app-miso-soup>
