@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FuguComponent implements OnInit {
 
+  filadelfia: string = 'assets/fugu/filadelfiya.500x500.png';
+
   constructor() { }
 
   ngOnInit(): void {

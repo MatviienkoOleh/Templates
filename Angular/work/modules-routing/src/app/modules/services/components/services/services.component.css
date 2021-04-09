@@ -3,16 +3,39 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(#ffffff, #585e66);
+  background-color: rgb(235, 235, 235);
 }
 
 .services_block {
     display: flex;
-    width: 80vw;
-    height: 150px;
-    margin: 2%;
+    flex-direction: column;
+    width: 90vw;
+    height: 280px;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(255, 255, 255);
 }
 
-.images {
-  width: 80vw;
+.services_Images {
+  width: 90vw;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.services_Content_name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.services_Context_Info {
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
