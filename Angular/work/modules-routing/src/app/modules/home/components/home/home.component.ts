@@ -11,7 +11,9 @@ export class HomeComponent implements OnInit {
 
   coverOne: boolean = true; 
   coverTwo: boolean = false;
-  backImage: boolean = true;
+  coverThree: boolean = true;
+  coverFour: boolean = true;
+  coverFive: boolean = true;
 
   ngOnInit():void {
   }
@@ -20,13 +22,15 @@ export class HomeComponent implements OnInit {
 
   menuOpen() {
     this.coverOne = false;
+    this.coverThree = false;
+    this.coverFour = false;
     this.coverTwo = true;
-    this.backImage = false;
   }
 
   closeNavigationBar() {
     this.coverTwo = false;
     this.coverOne = true;
-    this.backImage = true;
+    this.coverThree = true;
+    this.coverFour = true;
   }
 }

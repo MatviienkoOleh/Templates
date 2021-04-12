@@ -1,5 +1,8 @@
 .cover {
-  padding-top: 5%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid gray;
+  background-color: rgb(53, 53, 53);
 }
 
 .backimage {
@@ -14,8 +17,15 @@
   align-items: center;
 }
 
+.company_name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
 .menu {
   display: block;
+  fill: white;
   width: 40px;
   height: 40px;
 }
@@ -31,7 +41,6 @@
   display: flex;
   justify-content: space-around;
   margin-left: -5%;
-  background-image: url("/assets/save-nature-lettering-hand-drawn-vector-9276467.jpg");
   height: 735px;
 }
 
@@ -51,4 +60,84 @@
 
 .list_text:hover {
   color: black;
+}
+
+
+
+.cover_three {
+  height: 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/assets/home/dc.jpg");
+}
+
+.recycle {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+.cover_Three_Company_Name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cover_Three_Company_Name_Slogan {
+  width: 90%;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+
+
+.cover_four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover_Four_Header {
+  width: 200px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+hr {
+  width: 100px;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.cover_Four_Info_block {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cover_Four_Info_Header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.cover_Four_Info_Paragraph {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.contact_link {
+  color: orange;
+  font-weight: 600;
 }
