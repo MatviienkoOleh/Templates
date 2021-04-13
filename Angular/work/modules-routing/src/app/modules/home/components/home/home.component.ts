@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
   coverThree: boolean = true;
   coverFour: boolean = true;
   coverFive: boolean = true;
+  coverSix: boolean = true;
+  coverSeven: boolean = true;
 
   ngOnInit():void {
   }
@@ -24,6 +26,9 @@ export class HomeComponent implements OnInit {
     this.coverOne = false;
     this.coverThree = false;
     this.coverFour = false;
+    this.coverFive = false;
+    this.coverSix = false;
+    this.coverSeven = false;
     this.coverTwo = true;
   }
 
@@ -32,5 +37,8 @@ export class HomeComponent implements OnInit {
     this.coverOne = true;
     this.coverThree = true;
     this.coverFour = true;
+    this.coverFive = true;
+    this.coverSix = true;
+    this.coverSeven = true;
   }
 }

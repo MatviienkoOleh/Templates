@@ -146,6 +146,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .cover_Five_Block_Services {
@@ -195,4 +196,74 @@ hr {
   text-decoration: none;
   color: orange;
   font-weight: 600;
+}
+
+.cover_Six {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover_Six_Block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-image: url('/../../assets/home/g0914-01_2.jpg');
+  background-size: 100% 100%;
+}
+
+.cover_Six_Header {
+  padding-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.cover_Seven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-color: rgb(53, 53, 53);
+}
+
+.company_Name_Style {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.recycleTwo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.footer_Info {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+}
+
+.footer_Links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.instagram {
+  width: 50px;
+  height: 50px;
+}
+
+.facebook {
+  width: 40px;
+  height: 40px;
 }

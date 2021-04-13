@@ -71,18 +71,29 @@
         l28.8-27.52C512.94,295.239,512.044,304.569,508.414,312.969z"/>
     </g>
   </symbol>
+  <symbol id = "instagram" viewBox="0 0 24 24">
+    <path d="m1.5 1.633c-1.886 1.959-1.5 4.04-1.5 10.362 0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091-.559-.081-.671-.105-3.539-.11-10.173.005-12.403-.448-14.41 1.633z" fill="url(#SVGID_1_)"/><path d="m11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471c-.587 0-1.063.476-1.063 1.063s.476 1.063 1.063 1.063 1.063-.476 1.063-1.063-.476-1.063-1.063-1.063zm-4.73 1.243c-2.513 0-4.55 2.038-4.55 4.551s2.037 4.55 4.55 4.55 4.549-2.037 4.549-4.55-2.036-4.551-4.549-4.551zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z" fill="#fff"/>
+  </symbol>
+  <symbol id = "facebook" viewBox="0 0 112.196 112.196">
+    <g>
+      <circle style="fill:#3B5998;" cx="56.098" cy="56.098" r="56.098"/>
+      <path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
+        c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
+    </g>
+  </symbol>
 </svg>
 
-<div class = "cover" id = "cover" *ngIf = coverOne>
+<div class = "wrapper">
+  <div class = "cover" id = "cover" *ngIf = coverOne>
   <header class = "main_header">
     <h1 class = "company_name">Save the Leaf</h1>
     <svg class = "menu">
       <use xlink:href ="#menu" (click) = "menuOpen()"></use>
     </svg>
   </header>
-</div>
+  </div>
 
-<div class = "cover_two " *ngIf = coverTwo>
+  <div class = "cover_two " *ngIf = coverTwo>
   <div class = "list_div">
     <nav>
       <ul>
@@ -98,17 +109,17 @@
       <use xlink:href ="#close" (click) = "closeNavigationBar()"></use>
     </svg>
   </div>
-</div>
+  </div>
 
-<div class = "cover_three" *ngIf = coverThree>
+  <div class = "cover_three" *ngIf = coverThree>
   <svg class = "recycle">
     <use xlink:href ="#recycle"></use>
   </svg>
   <h4 class = "cover_Three_Company_Name">Company Name</h4>
   <p class = "cover_Three_Company_Name_Slogan">Помощь предприятиям в переработке большего количества отходов и меньшем вывозе на свалки</p>
-</div>
+  </div>
 
-<div class = "cover_four" *ngIf = coverFour>
+  <div class = "cover_four" *ngIf = coverFour>
   <h3 class = "cover_Four_Header">КУЛЬТУРА ПЕРЕРАБОТКИ</h3>
   <hr>
   <div class = "cover_Four_Info_block">
@@ -117,9 +128,9 @@
       <a class = "contact_link">Contact us</a> сегодня, чтобы узнать о возможностях, которые ждут вас в потоке отходов.
     </p>
   </div>
-</div>
+  </div>
 
-<div class = "cover_Five" *ngIf = coverFive>
+  <div class = "cover_Five" *ngIf = coverFive>
   <h3 class = "cover_Four_Header">SERVICES</h3>
   <hr>
   <div class = "cover_Four_Info_block">
@@ -153,4 +164,33 @@
       <a class = "cover_Five_contact_link" href="">Lear More</a>
     </div>
   </div>
+  </div>
+
+  <div class = "cover_Six" *ngIf = coverSix>
+  <div class = "cover_Six_Block">
+    <h3 class = "cover_Six_Header">A COMPLETE APPROACH</h3>
+  </div>
+  <h3 class = "cover_Four_Header">Customer Satisfaction</h3>
+  <hr>
+  <div class = "cover_Four_Info_block">
+    <h4 class = "cover_Four_Info_Header">Doing The Right Thing Pays Off</h4>
+    <p class = "cover_Four_Info_Paragraph">Name of company has helped thousands of manufacturing, distribution, and other business facilities improve their recycling and waste management programs. See examples of our work or contact us to learn more. 
+    </p>
+  </div>
+  </div>
+  <footer class = "cover_Seven" *ngIf = coverSeven>
+    <svg class = "recycleTwo">
+      <use xlink:href ="#recycle"></use>
+    </svg>
+    <h4 class = "company_Name_Style">COMPANY NAME</h4>
+    <p class = "footer_Info">Name Recycling Company, Inc.</p>
+    <div class = "footer_Links">
+      <svg class = "instagram">
+        <use xlink:href ="#instagram"></use>
+      </svg>
+      <svg class = "facebook">
+        <use xlink:href ="#facebook"></use>
+      </svg>
+    </div>
+  </footer>
 </div>
