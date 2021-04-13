@@ -1,4 +1,6 @@
 .cover {
+  position: fixed;
+  width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
   border-bottom: 1px solid gray;
