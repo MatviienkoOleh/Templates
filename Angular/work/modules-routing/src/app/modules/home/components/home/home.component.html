@@ -13,7 +13,7 @@
     <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
   </symbol>
   <symbol id ="close" viewBox="0 0 22.88 22.88">
-    <path style="fill:#1E201D;" d="M0.324,1.909c-0.429-0.429-0.429-1.143,0-1.587c0.444-0.429,1.143-0.429,1.587,0l9.523,9.539
+    <path style="fill:#ffffff;" d="M0.324,1.909c-0.429-0.429-0.429-1.143,0-1.587c0.444-0.429,1.143-0.429,1.587,0l9.523,9.539
 	l9.539-9.539c0.429-0.429,1.143-0.429,1.571,0c0.444,0.444,0.444,1.159,0,1.587l-9.523,9.524l9.523,9.539
 	c0.444,0.429,0.444,1.143,0,1.587c-0.429,0.429-1.143,0.429-1.571,0l-9.539-9.539l-9.523,9.539c-0.444,0.429-1.143,0.429-1.587,0
 	c-0.429-0.444-0.429-1.159,0-1.587l9.523-9.539L0.324,1.909z"/>
@@ -85,16 +85,26 @@
 
 <div class = "wrapper">
   <div class = "cover" id = "cover" *ngIf = coverOne>
-  <header class = "main_header">
-    <h1 class = "company_name">Save the Leaf</h1>
-    <svg class = "menu">
-      <use xlink:href ="#menu" (click) = "menuOpen()"></use>
-    </svg>
-  </header>
+    <header class = "main_header">
+      <h1 class = "company_name">Save the Leaf</h1>
+      <svg class = "menu">
+        <use xlink:href ="#menu" (click) = "menuOpen()"></use>
+      </svg>
+    </header>
   </div>
 
   <div class = "cover_two " *ngIf = coverTwo>
-  <div class = "list_div">
+    <header class = "cover_Two_Header">
+      <div class ="logo_block">
+        <svg class = "cover_Two_Recycle_Logo">
+          <use xlink:href ="#recycle"></use>
+        </svg>
+        <h5 class = "logo_Block_Name">Company Name</h5>
+      </div>
+      <svg class = "cross">
+        <use xlink:href ="#close" (click) = "closeNavigationBar()"></use>
+      </svg>
+    </header>
     <nav>
       <ul>
         <li class = "list_text" routerLink = '/form'>Sign in/ Sign up</li>
@@ -103,12 +113,6 @@
         <li class = "list_text" routerLink = '/FAQ'>F&Q</li>
       </ul>
     </nav>
-  </div>
-  <div class = "cross_block">
-    <svg class = "cross">
-      <use xlink:href ="#close" (click) = "closeNavigationBar()"></use>
-    </svg>
-  </div>
   </div>
 
   <div class = "cover_three" *ngIf = coverThree>
