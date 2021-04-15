@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
 
   imgOne: string = 'assets/home/background.jpg';
   imgTwo: string = 'assets/home/1490599919-125.jpg';
-  imgThree: string = 'assets/home/csm_IMG_7738_1_24490e9b1f.webp';
-  imgFour: string = 'assets/home/5e398d89bbcce-bogdan-zavod3455_1200.webp';
+  imgThree: string = 'assets/home/ddbdd009c86fa3c6af8beb9cd73c87df.jpg';
+  imgFour: string = 'assets/home/Bogdan_Plant_02.jpg';
 
   ngOnInit():void {
   }
