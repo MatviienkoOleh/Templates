@@ -10,7 +10,11 @@
 .backimage {
   height: 675px;
   width: 100%;
-  background-image: url("/assets/save-nature-lettering-hand-drawn-vector-9276467.jpg")
+  background: url(/assets/save-nature-lettering-hand-drawn-vector-9276467.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main_header {

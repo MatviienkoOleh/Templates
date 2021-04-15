@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { convertToParamMap, Router } from '@angular/router';
-import { GetDataService } from 'src/app/services/get-data.service';
 
 @Component({
   selector: 'app-home',
