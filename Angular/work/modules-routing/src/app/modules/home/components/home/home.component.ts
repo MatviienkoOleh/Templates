@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   coverFive: boolean = true;
   coverSix: boolean = true;
   coverSeven: boolean = true;
+  slider: boolean = true;
 
   imgOne: string = 'assets/home/background.jpg';
   imgTwo: string = 'assets/home/1490599919-125.jpg';
@@ -25,6 +26,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   menuOpen() {
+    this.slider = false;
     this.coverOne = false;
     this.coverThree = false;
     this.coverFour = false;
@@ -35,6 +37,7 @@ export class HomeComponent implements OnInit {
   }
 
   closeNavigationBar() {
+    this.slider = true;
     this.coverTwo = false;
     this.coverOne = true;
     this.coverThree = true;
