@@ -246,6 +246,75 @@ hr {
   color: white;
 }
 
+.cover_Slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  background-color: rgb(88, 88, 88);
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+}
+
+.bar {
+  height: 10px;
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);;
+  border-radius: 10px;
+  transition:  all .4s ease;
+}
+
+.bar:hover {
+  background-color: rgb(53, 53, 53);
+  transform: scale(1.3);
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: all .6s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
 .cover_Seven {
   display: flex;
   flex-direction: column;
@@ -291,4 +360,112 @@ hr {
 .facebook {
   width: 40px;
   height: 40px;
+}
+
+.cover_On_Bigger_Screen {
+  display: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .slider {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cover {
+    display: none;
+  }
+
+  .cover_On_Bigger_Screen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(53, 53, 53);
+  }
+
+  .section_One {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    width: 50%;
+  }
+
+  .cover_Two_Recycle_Logo {
+    display: block;
+    height: 70px;
+    width: 70px;
+  }
+
+  .style_Name_Company {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 20px;
+    color: white;
+  }
+
+  .navigationToolBar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 45%;
+  }
+
+  .navigation_Links {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+  }
+
+  .navigation_Links:hover {
+    background-color: black;
+  }
+
+  .cover_three {
+    height: 900px;
+  }
+
+  .cover_Three_Company_Name_Slogan {
+    width: 50%;
+  }
+
+  .slider {
+    width: 550px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cover_On_Bigger_Screen {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navigationToolBar {
+    display: flex;
+  }
+
+  .cover_Four_Info_Paragraph {
+    width: 60%;
+  }
+
+  .slider {
+    width: 700px;
+    height: 500px;
+  }
 }

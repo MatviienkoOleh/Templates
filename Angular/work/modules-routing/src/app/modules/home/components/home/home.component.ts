@@ -8,7 +8,6 @@ import { GetDataService } from 'src/app/services/get-data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
   coverOne: boolean = true; 
   coverTwo: boolean = false;
   coverThree: boolean = true;
@@ -16,6 +15,11 @@ export class HomeComponent implements OnInit {
   coverFive: boolean = true;
   coverSix: boolean = true;
   coverSeven: boolean = true;
+
+  imgOne: string = 'assets/home/background.jpg';
+  imgTwo: string = 'assets/home/1490599919-125.jpg';
+  imgThree: string = "assets/home/csm_IMG_7738_1_24490e9b1f.webp";
+  imgFour: string = "assets/home/5e398d89bbcce-bogdan-zavod3455_1200.webp"
 
   ngOnInit():void {
   }

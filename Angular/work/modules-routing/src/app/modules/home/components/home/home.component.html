@@ -93,6 +93,22 @@
     </header>
   </div>
 
+  <header class = "cover_On_Bigger_Screen">
+    <section class = "section_One">
+      <svg class = "cover_Two_Recycle_Logo">
+        <use xlink:href ="#recycle"></use>
+      </svg>
+      <p class = "style_Name_Company">Name of Company Inc.</p>
+    </section>
+    <span>Call Now: +38(63)8074078</span>
+    <nav class = "navigationToolBar">
+      <a class = "navigation_Links" routerLink = '/form'>Login</a>
+      <a class = "navigation_Links" routerLink = '/organisationform'>Organisation</a>
+      <a class = "navigation_Links" routerLink = '/services'>Services</a>
+      <a class = "navigation_Links" routerLink = '/FAQ'>F&Q</a>
+    </nav>
+  </header>
+
   <div class = "cover_two " *ngIf = coverTwo>
     <header class = "cover_Two_Header">
       <div class ="logo_block">
@@ -182,6 +198,31 @@
     </p>
   </div>
   </div>
+
+  <div class = "cover_Slider">
+    <h3 class = "cover_Four_Header">Company work with</h3>
+    <hr>
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name ="r" id="r1" checked>
+        <input type="radio" name ="r" id="r2">
+        <input type="radio" name ="r" id="r3">
+        <input type="radio" name ="r" id="r4">
+  
+        <div class="slide s1" ><img [src]="imgOne" alt=""></div>
+        <div class="slide"><img [src]="imgTwo" alt=""></div>
+        <div class="slide"><img [src]="imgThree" alt=""></div>
+        <div class="slide"><img [src]="imgFour" alt=""></div>
+      </div>
+    </div>
+    <div class="navigation">
+      <label for="r1" class = "bar"></label>
+      <label for="r2" class = "bar"></label>
+      <label for="r3" class = "bar"></label>
+      <label for="r4" class = "bar"></label>
+    </div>
+  </div>
+
   <footer class = "cover_Seven" *ngIf = coverSeven>
     <svg class = "recycleTwo">
       <use xlink:href ="#recycle"></use>
