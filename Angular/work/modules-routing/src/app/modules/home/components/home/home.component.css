@@ -185,6 +185,7 @@ hr {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: rgb(238, 238, 238);
+  cursor: pointer;
 }
 
 .arrow_circle {

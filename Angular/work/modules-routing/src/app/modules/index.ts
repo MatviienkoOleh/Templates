@@ -8,6 +8,7 @@ import { McDonaldsModule } from "./mc-donalds/mc-donalds.module";
 import { OrganisationAccountModule } from "./organisation-account/organisation-account.module";
 import { OrganisationFormRegistrationModule } from "./organisation-form-registration/organisation-form-registration.module";
 import { OrganisationFormModule } from "./organisation-form/organisation-form.module";
+import { OurServicesModule } from "./our-services/our-services.module";
 import { RegistrationModule } from "./registration/registration.module";
 import { ServicesModule } from "./services/services.module";
 
@@ -23,5 +24,6 @@ export const modules = [
     OrganisationFormModule,
     OrganisationFormRegistrationModule,
     FuguModule,
-    McDonaldsModule
+    McDonaldsModule,
+    OurServicesModule
 ];
