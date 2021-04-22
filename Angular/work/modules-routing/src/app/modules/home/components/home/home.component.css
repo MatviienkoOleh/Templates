@@ -341,7 +341,7 @@ input[name="r"] {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  width: 100px;
+  width: 150px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -352,6 +352,11 @@ input[name="r"] {
 }
 
 .facebook {
+  width: 40px;
+  height: 40px;
+}
+
+.twitter {
   width: 40px;
   height: 40px;
 }

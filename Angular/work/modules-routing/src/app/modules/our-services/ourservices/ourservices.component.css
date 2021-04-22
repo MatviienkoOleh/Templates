@@ -32,7 +32,7 @@ hr {
 
 .sectipn_header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: orange;
+    color: rgb(255, 102, 0);
     margin-bottom: 20px
 }
 
@@ -164,8 +164,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: rgb(255, 102, 0);
   border-radius: 50%;
   margin-bottom: 20px;
@@ -179,8 +179,8 @@ hr {
 .svg_image_block {
   display: block;
   fill: white;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .section_Two_Block_Two {
@@ -190,6 +190,11 @@ hr {
 
 .margin {
   color: black;
+}
+
+.sectipn_Two_Header {
+  color: rgb(255, 102, 0);
+  margin-bottom: 20px;
 }
 
 .cover_Seven {
@@ -225,7 +230,7 @@ hr {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    width: 100px;
+    width: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -236,6 +241,11 @@ hr {
   }
   
   .facebook {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .twitter {
     width: 40px;
     height: 40px;
   }
