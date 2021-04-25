@@ -7,6 +7,7 @@ import { FAQComponent } from './modules/faq/components/faq/faq.component';
 import { FormComponent } from './modules/form/components/form/form.component';
 import { HomeComponent } from './modules/home/components/home/home.component'
 import { McdonaldsComponent } from './modules/mc-donalds/mcdonalds/mcdonalds.component';
+import { NationalReachComponent } from './modules/national-reach/national-reach/national-reach.component';
 import { OrganisationFormComponent } from './modules/organisation-form/components/organisation-form/organisation-form.component';
 import { OurservicesComponent } from './modules/our-services/ourservices/ourservices.component';
 import { RegistrationComponent } from './modules/registration/components/registration/registration.component';
@@ -20,7 +21,7 @@ const routes: Routes = [
   { path: 'organisationform', component: OrganisationFormComponent},
   { path: 'home/ourservices', component: OurservicesComponent},
   { path: 'home/ourservices', component: OurservicesComponent},
-  { path: 'home/ourservices', component: OurservicesComponent}
+  { path: 'home/nationalreach', component: NationalReachComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,233 @@
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid gray;
+    background-color: rgb(53, 53, 53);
+  }
+  
+  .main_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .company_name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .menu {
+    display: block;
+    fill: white;
+    width: 40px;
+    height: 40px;
+}
+
+.cover_two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px 0px 40px;
+    height: 100vh;
+    background-color: rgb(53, 53, 53);
+  }
+  
+  .cover_Two_Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .logo_block {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo_Block_Name {
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .cover_Two_Recycle_Logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cross {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .list_text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    list-style-type: none;
+    line-height: 42px;
+    color: #fffdfd;
+  }
+  
+.list_text:hover {
+    color: black;
+}
+ 
+.cover_On_Bigger_Screen {
+    display: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section_One {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 200px;
+    margin-bottom: 40px
+}
+
+.ukraineMapa {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    fill: rgb(255, 102, 0);
+    stroke: black;
+}
+
+.section_Two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom:40px;
+}
+
+.list {
+    margin-bottom: 20px;
+}
+
+.list_Item {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.info_Two {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+@media screen and (min-width: 900px) {
+    .cover {
+      display: no
+    }
+  
+    .cover_On_Bigger_Screen {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(53, 53, 53);
+    }
+  
+    .sectionONE {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10%;
+      width: 50%;
+    }
+  
+    .cover_Two_Recycle_Logo {
+      display: block;
+      height: 60px;
+      width: 60px;
+    }
+  
+    .style_Name_Company {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      margin-left: 20px;
+      color: white;
+    }
+  
+    .navigationToolBar {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      width: 45%;
+    }
+  
+    .navigation_Links {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+  
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: white;
+    }
+  
+    .navigation_Links:hover {
+      background-color: black;
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+    .cover_On_Bigger_Screen {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .navigationToolBar {
+      display: flex;
+    }
+}
+  

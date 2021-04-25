@@ -5,12 +5,14 @@ import { FormModule } from "./form/form.module";
 import { FuguModule } from "./fugu/fugu.module";
 import { HomeModule } from "./home/home.module";
 import { McDonaldsModule } from "./mc-donalds/mc-donalds.module";
+import { NationalReachModule } from "./national-reach/national-reach.module";
 import { OrganisationAccountModule } from "./organisation-account/organisation-account.module";
 import { OrganisationFormRegistrationModule } from "./organisation-form-registration/organisation-form-registration.module";
 import { OrganisationFormModule } from "./organisation-form/organisation-form.module";
 import { OurServicesModule } from "./our-services/our-services.module";
 import { RegistrationModule } from "./registration/registration.module";
 import { ServicesModule } from "./services/services.module";
+import { SharedModule } from "./shared/shared.module";
 
 export const modules = [
     AccessoriesModule,
@@ -25,5 +27,7 @@ export const modules = [
     OrganisationFormRegistrationModule,
     FuguModule,
     McDonaldsModule,
-    OurServicesModule
+    OurServicesModule,
+    NationalReachModule,
+    SharedModule
 ];
