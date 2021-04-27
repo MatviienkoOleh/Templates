@@ -178,13 +178,32 @@
       </svg>
       <p class = "style_Name_Company">Name of Company Inc.</p>
     </section>
-    <span>Call Now: +38(63)8074078</span>
-    <nav class = "navigationToolBar">
-      <a class = "navigation_Links" routerLink = '/form'>Login</a>
-      <a class = "navigation_Links" routerLink = '/organisationform'>Organisation</a>
-      <a class = "navigation_Links" routerLink = '/services'>Services</a>
-      <a class = "navigation_Links" routerLink = '/FAQ'>F&Q</a>
-    </nav>
+    <div class = "navigationToolBar">
+        <header>
+        <nav class="dws-menu">
+            <ul>
+            <li>
+                <a href="#"><i class="fa fa-cogs"></i>Services</a>
+                <ul>
+                <li><a routerLink = '/home/ourservices'>Our Services</a></li>
+                <li><a href="#">Recycling</a></li>
+                <li><a href="#">Organics</a></li>
+                <li><a href="#">Refuse</a></li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink = '/form'><i class="fa fa-home"></i>Login</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-shopping-cart"></i>Organisation</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-th-list"></i>F&Q</a>
+            </li>
+            </ul>
+        </nav>
+        </header>
+    </div>
   </header>
 
   <div class = "cover_two " *ngIf = coverTwo>

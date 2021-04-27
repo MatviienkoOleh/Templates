@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -22,9 +23,12 @@ export class HomeComponent implements OnInit {
   imgFour: string = 'assets/home/Bogdan_Plant_02.jpg';
 
   ngOnInit():void {
+    this.viewPortScroller.scrollToPosition([0, 0])
   }
 
-  constructor(private router: Router,) {}
+  constructor(
+    private router: Router,
+    private viewPortScroller: ViewportScroller) {}
 
   menuOpen() {
     this.slider = false;
