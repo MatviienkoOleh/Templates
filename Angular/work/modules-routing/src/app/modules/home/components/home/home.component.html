@@ -171,40 +171,7 @@
     </header>
   </div>
 
-  <header class = "cover_On_Bigger_Screen">
-    <section class = "section_One">
-      <svg class = "cover_Two_Recycle_Logo">
-        <use xlink:href ="#recycle"></use>
-      </svg>
-      <p class = "style_Name_Company">Name of Company Inc.</p>
-    </section>
-    <div class = "navigationToolBar">
-        <header>
-        <nav class="dws-menu">
-            <ul>
-            <li>
-                <a href="#"><i class="fa fa-cogs"></i>Services</a>
-                <ul>
-                <li><a routerLink = '/home/ourservices'>Our Services</a></li>
-                <li><a href="#">Recycling</a></li>
-                <li><a href="#">Organics</a></li>
-                <li><a href="#">Refuse</a></li>
-                </ul>
-            </li>
-            <li>
-                <a routerLink = '/form'><i class="fa fa-home"></i>Login</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-shopping-cart"></i>Organisation</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-th-list"></i>F&Q</a>
-            </li>
-            </ul>
-        </nav>
-        </header>
-    </div>
-  </header>
+  <app-navigation></app-navigation>
 
   <div class = "cover_two " *ngIf = coverTwo>
     <header class = "cover_Two_Header">
@@ -283,7 +250,7 @@
         </svg>
       </div>
       <h5 class = "cover_Five_Block_Header">Where We Operate</h5>
-      <p class = "cover_Five_Block_Paragraph">We operate across Ukraine, and offer national programs for multi-site organizations.</p>
+      <p class = "cover_Five_Block_Paragraph">We operate across Ukraine, and offer our national programs for multi-site organizations.</p>
       <a class = "cover_Five_contact_link" routerLink = '/home/ourservices'>Lear More</a>
     </div>
     </div>

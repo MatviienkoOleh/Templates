@@ -6,6 +6,7 @@
 
   .cover_On_Bigger_Screen {
     display: flex;
+    position: fixed;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -22,8 +23,8 @@
 
   .cover_Two_Recycle_Logo {
     display: block;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
   }
 
   .style_Name_Company {
@@ -34,30 +35,9 @@
     color: white;
   }
 
-  .navigationToolBar {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    width: 45%;
+  .dws-menu {
+    margin-right: 120px;
   }
-
-  .navigation_Links:hover {
-    background-color: black;
-  }
-
-  .cover_three {
-    height: 900px;
-  }
-
-  .cover_Three_Company_Name_Slogan {
-    width: 50%;
-  }
-
-  .slider {
-    width: 550px;
-    height: 400px;
-  }
-
 
    .dws-menu ul,
    .dws-menu ol{
@@ -103,7 +83,7 @@
    /*sub menu*/
    .dws-menu li ul{
     position: absolute;
-    min-width: 150px;
+    min-width: 180px;
     display: none;
    }
    .dws-menu li > ul li{
@@ -111,13 +91,13 @@
    }
    .dws-menu li > ul li a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 15px;
+    padding: 10px;
     text-transform: none;
     background: rgb(53, 53, 53);
    }
    .dws-menu li > ul li ul{
     position: absolute;
-    right: -150px;
+    right: -180px;
     top: 0;
    }
    .dws-menu li:hover > ul{

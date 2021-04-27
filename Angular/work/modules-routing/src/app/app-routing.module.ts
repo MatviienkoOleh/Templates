@@ -20,7 +20,6 @@ const routes: Routes = [
   { path: 'FAQ', component: FAQComponent},
   { path: 'organisationform', component: OrganisationFormComponent},
   { path: 'home/ourservices', component: OurservicesComponent},
-  { path: 'home/ourservices', component: OurservicesComponent},
   { path: 'home/nationalreach', component: NationalReachComponent}
 ];
 

@@ -100,6 +100,10 @@
     width: 100%;
 }
 
+.emptySpace {
+  height: 80px;
+}
+
 .section_One {
     display: flex;
     flex-direction: column;

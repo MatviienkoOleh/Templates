@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.emptySpace {
+  height: 80px;
+}
+
 .section_One {
     display: flex;
     flex-direction: column;
