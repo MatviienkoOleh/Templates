@@ -1,0 +1,123 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.emptySpace {
+    height: 80px;
+}
+
+.main_H {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.text_Info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.box_Section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+
+@keyframes fadeInDown {
+    0% {               
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {            
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.plastic_Box_Info {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: scroll;
+    animation-duration: 0.55s;
+    animation-fill-mode: both; 
+    animation-name: fadeInDown;
+}
+
+.plastic_Box_Header {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill:  rgb(255, 102, 0);
+}
+
+.plastic {
+    padding: 10px 20px 20px 20px;
+    width: 90vw;
+    height: 300px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.plastic_Header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgb(255, 102, 0);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.plastic_Info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.link_Info {
+    color: rgb(255, 102, 0);
+    font-weight: 600;
+}
+
+.padding {
+    padding-left: 50px;
+}

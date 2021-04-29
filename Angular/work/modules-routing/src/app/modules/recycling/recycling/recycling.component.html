@@ -1,0 +1,165 @@
+<svg display='none'>
+    <symbol id ="close" viewBox="0 0 22.88 22.88">
+        <path d="M0.324,1.909c-0.429-0.429-0.429-1.143,0-1.587c0.444-0.429,1.143-0.429,1.587,0l9.523,9.539
+        l9.539-9.539c0.429-0.429,1.143-0.429,1.571,0c0.444,0.444,0.444,1.159,0,1.587l-9.523,9.524l9.523,9.539
+        c0.444,0.429,0.444,1.143,0,1.587c-0.429,0.429-1.143,0.429-1.571,0l-9.539-9.539l-9.523,9.539c-0.444,0.429-1.143,0.429-1.587,0
+        c-0.429-0.444-0.429-1.159,0-1.587l9.523-9.539L0.324,1.909z"/>
+      </symbol>
+</svg>
+
+<app-navigation></app-navigation>
+
+<div class = "wrapper">
+    <div class = "emptySpace">
+    </div>
+    <h1 class = "main_H">Recycling</h1>
+    <hr>
+    <p class = "text_Info">Northstar Recycling specializes in providing Zero Waste to Landfill solutions for all waste materials, and works with clients to meet their unique program goals. Contact us today for a complete program analysis from one of our recycling experts, and checkout the bubbles below for more information by material type.</p>
+    <section class ="box_Section">
+        <div class = "box" (click) = plasticBoxShow()>
+            <img [src]=plastic alt="">
+            <h3>Plastic</h3>
+        </div>
+        <div class = "box" (click) = cardboardBoxShow()>
+            <img [src]=cardboard alt="">
+            <h3>Cardboard</h3>
+        </div>
+        <div class = "box" (click) = paperBoxShow()>
+            <img [src]=paper alt="">
+            <h3>Paper</h3>
+        </div>
+        <div class = "box" (click) = woodBoxShow()>
+            <img [src]=wood alt="">
+            <h3>Wood</h3>
+        </div>
+        <div class = "box" (click) = metalBoxShow()>
+            <img [src]=metal alt="">
+            <h3>Metal</h3>
+        </div>
+        <div class = "box" (click) = otherBoxShow()>
+            <img [src]=other alt="">
+            <h3>Other</h3>
+        </div>
+    </section>
+
+    <div class = "plastic_Box_Info" *ngIf = plasticBox>
+        <header class = "plastic_Box_Header">
+            <svg class = "close" (click) = plasticBoxHide()>
+                <use xlink:href ="#close"></use>
+            </svg>
+        </header>
+        <img  class = "plastic" [src] = "plastic" alt="">
+        <h3 class = "plastic_Header">Plastic</h3>
+        <p class = "plastic_Info">
+            Northstar is skilled at improving manufacturing and distribution companies’ plastic recycling programs. We also offer a leading level of market stability when it comes recycling your plastic streams. While some plastic materials are more difficult to recycle than others, we can help your company find landfill alternative solutions for any plastic resins, as well as films, foams, and dirty plastics.
+        </p>
+        <p class = "plastic_Info">We offer combination trailers and a variety of comingled collection options, based on each client facility’s needs and capabilities. However, we will also help identify which materials would be more valuable when collected separately, and may recommend specialized equipment, such as balers or foam densifies.
+            <span class = "link_Info">Contact us</span> today to learn more.
+        </p>
+    </div>
+
+    <div class = "plastic_Box_Info" *ngIf = cardboardBox>
+        <header class = "plastic_Box_Header">
+            <svg class = "close" (click) = cardboardBoxHide()>
+                <use xlink:href ="#close"></use>
+            </svg>
+        </header>
+        <img  class = "plastic" [src] = "cardboard" alt="">
+        <h3 class = "plastic_Header">Cardboard</h3>
+        <p class = "plastic_Info">
+            Northstar offers competitive pricing and expert advice when it comes to recycling any cardboard paper streams. Our recycling experts work with each client facility to identify the best sorting and collection options for the client’s unique needs and opportunities.
+        </p>
+        <p class = "plastic_Info">We will work with you to identifying the best methods for maximizing your cardboard recycling rebates. <span class = "link_Info">Contact us</span> today to learn more.
+        </p>
+    </div>
+
+    <div class = "plastic_Box_Info" *ngIf = paperBox>
+        <header class = "plastic_Box_Header">
+            <svg class = "close" (click) = paperBoxHide()>
+                <use xlink:href ="#close"></use>
+            </svg>
+        </header>
+        <img  class = "plastic" [src] = "paper" alt="">
+        <h3 class = "plastic_Header">Paper</h3>
+        <p class = "plastic_Info">
+            Having once begun as a paper recycling mill, Northstar has a strong background in paper recycling, and knows the best methods for making your paper waste streams as valuable as possible. We offer recycling solutions for all paper grades, including mixed paper and options for both un-lined and poly-lined kraft ingredient bags. We also provide competitive pricing and mill direct options for high quality materials.
+        </p>
+        <p class = "plastic_Info">In many cases, clients can improve the value of their paper grades through baling. Our team can work with you to choose the best baler for your facility and material volumes, and can also provide financing options and training.<br>
+            <span class = "link_Info">Contact us </span>today to learn more.
+        </p>
+    </div>
+
+    <div class = "plastic_Box_Info" *ngIf = woodBox>
+        <header class = "plastic_Box_Header">
+            <svg class = "close" (click) = woodBoxHide()>
+                <use xlink:href ="#close"></use>
+            </svg>
+        </header>
+        <img  class = "plastic" [src] = "wood" alt="">
+        <h3 class = "plastic_Header">Wood</h3>
+        <p class = "plastic_Info">
+            Northstar offers a variety of reclamation options for wood waste, including reuse, recycling, and other landfill alternative solutions. Factors that we consider when recommending the best disposal option for you include the following:
+        </p>
+        <ul class = "plastic_Info padding">
+            <li>What size are the pieces of wood waste (chips, slabs, logs, etc.)?</li>
+            <li>Is the wood reusable (ex. pallets)?</li>
+            <li>Is the wood treated with creosote?</li>
+            <li>Are there any nails or metal fixings?</li>
+            <li>Are there any bindings or glues?</li>
+            <li>Is the wood painted?</li>
+            <li>Is the wood coated with Polyurethane or any other finishes?</li>
+            <li>Are there any plastics, glass, grit, or other contaminates mixed with this waste stream?</li>
+        </ul>
+        <p class = "plastic_Info">Our recycling experts will work with you to identify the best method for collecting and recycling your wood waste.<br>
+            <span class = "link_Info">Contact us </span>today to learn more.
+        </p>
+    </div>
+
+    <div class = "plastic_Box_Info" *ngIf = metalBox>
+        <header class = "plastic_Box_Header">
+            <svg class = "close" (click) = metalBoxHide()>
+                <use xlink:href ="#close"></use>
+            </svg>
+        </header>
+        <img  class = "plastic" [src] = metal alt="">
+        <h3 class = "plastic_Header">Metal</h3>
+        <p class = "plastic_Info">
+            Northstar offers recycling options for all metal grades, including aluminum, copper, nickel, silver, steel, and tin. We not only provide ongoing scrap recycling services, but also manage projects like the following:
+        </p>
+        <ul class = "plastic_Info padding">
+            <li>Metal Cleanout for Obsolete Equipment/Products</li>
+            <li>Machine Shop Recycling</li>
+            <li>Racking Dismantling & Removal</li>
+        </ul>
+        <p class = "plastic_Info">We will work with you to determine the best collection methods, and can provide a variety of open-top or enclosed collection containers. <br>
+            <span class = "link_Info">Contact us </span>today to learn more.
+        </p>
+    </div>
+
+    <div class = "plastic_Box_Info" *ngIf = otherBox>
+        <header class = "plastic_Box_Header">
+            <svg class = "close" (click) = otherBoxHide()>
+                <use xlink:href ="#close"></use>
+            </svg>
+        </header>
+        <img  class = "plastic" [src] = other alt="">
+        <h3 class = "plastic_Header">Other</h3>
+        <p class = "plastic_Info">
+            Northstar constantly strives to find innovative solutions for non-traditional and difficult to recycle materials. This includes organic and food waste, as well as items such as the following:
+        </p>
+        <ul class = "plastic_Info padding">
+            <li>Apparel and Textiles</li>
+            <li>Batteries</li>
+            <li>Burlap</li>
+            <li>E-Waste</li>
+            <li>Personal Protective and Safety Equipment</li>
+            <li>And More …</li>
+        </ul>
+        <p class = "plastic_Info">We are also specialized in establishing and managing Zero Waste to Landfill programs, and can work with your facility to meet any specific company goals. <br>
+            <span class = "link_Info">Contact us </span>today to learn more.
+        </p>
+    </div>
+
+</div>
+
+<app-footer>
