@@ -10,37 +10,39 @@
 <app-navigation></app-navigation>
 
 <div class = "wrapper">
-    <div class = "emptySpace">
+    <div class = "main_Div" *ngIf = mainDiv>
+        <div class = "emptySpace">
+        </div>
+        <h1 class = "main_H">Recycling</h1>
+        <hr>
+        <p class = "text_Info">Northstar Recycling specializes in providing Zero Waste to Landfill solutions for all waste materials, and works with clients to meet their unique program goals. Contact us today for a complete program analysis from one of our recycling experts, and checkout the bubbles below for more information by material type.</p>
+        <section class ="box_Section">
+            <div class = "box" (click) = plasticBoxShow()>
+                <img [src]=plastic alt="">
+                <h3>Plastic</h3>
+            </div>
+            <div class = "box" (click) = cardboardBoxShow()>
+                <img [src]=cardboard alt="">
+                <h3>Cardboard</h3>
+            </div>
+            <div class = "box" (click) = paperBoxShow()>
+                <img [src]=paper alt="">
+                <h3>Paper</h3>
+            </div>
+            <div class = "box" (click) = woodBoxShow()>
+                <img [src]=wood alt="">
+                <h3>Wood</h3>
+            </div>
+            <div class = "box" (click) = metalBoxShow()>
+                <img [src]=metal alt="">
+                <h3>Metal</h3>
+            </div>
+            <div class = "box" (click) = otherBoxShow()>
+                <img [src]=other alt="">
+                <h3>Other</h3>
+            </div>
+        </section>
     </div>
-    <h1 class = "main_H">Recycling</h1>
-    <hr>
-    <p class = "text_Info">Northstar Recycling specializes in providing Zero Waste to Landfill solutions for all waste materials, and works with clients to meet their unique program goals. Contact us today for a complete program analysis from one of our recycling experts, and checkout the bubbles below for more information by material type.</p>
-    <section class ="box_Section">
-        <div class = "box" (click) = plasticBoxShow()>
-            <img [src]=plastic alt="">
-            <h3>Plastic</h3>
-        </div>
-        <div class = "box" (click) = cardboardBoxShow()>
-            <img [src]=cardboard alt="">
-            <h3>Cardboard</h3>
-        </div>
-        <div class = "box" (click) = paperBoxShow()>
-            <img [src]=paper alt="">
-            <h3>Paper</h3>
-        </div>
-        <div class = "box" (click) = woodBoxShow()>
-            <img [src]=wood alt="">
-            <h3>Wood</h3>
-        </div>
-        <div class = "box" (click) = metalBoxShow()>
-            <img [src]=metal alt="">
-            <h3>Metal</h3>
-        </div>
-        <div class = "box" (click) = otherBoxShow()>
-            <img [src]=other alt="">
-            <h3>Other</h3>
-        </div>
-    </section>
 
     <div class = "plastic_Box_Info" *ngIf = plasticBox>
         <header class = "plastic_Box_Header">
@@ -159,7 +161,6 @@
             <span class = "link_Info">Contact us </span>today to learn more.
         </p>
     </div>
-
 </div>
 
-<app-footer>
+<app-footer *ngIf = footer></app-footer>
